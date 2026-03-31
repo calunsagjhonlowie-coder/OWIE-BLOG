@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematics in Chair Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Console -->
+    <aside class="sidebar">
+      <h2>Console</h2>
+      <button onclick="showSection('introduction')">Introduction</button>
+      <button onclick="showSection('geometry')">Geometry in Design</button>
+      <button onclick="showSection('symmetry')">Symmetry & Stability</button>
+      <button onclick="showSection('proportion')">Human Proportion</button>
+      <button onclick="showSection('physics')">Physics & Load</button>
+      <button onclick="showSection('evolution')">Evolution</button>
+      <button onclick="showSection('conclusion')">Conclusion</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <section id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>Mathematics is not confined to classrooms or textbooks—it is woven into the very objects we use every day. One of the most overlooked examples is the chair...</p>
+      </section>
+
+      <section id="geometry" class="section">
+        <h2>Geometry in Design</h2>
+        <p>Chairs are built from basic geometric shapes: rectangles for seats, cylinders for legs, and curves for backrests...</p>
+        <p><strong>Insight:</strong> Office chairs often incorporate adjustable angles, allowing users to shift between upright (90°) and reclined (120°)...</p>
+      </section>
+
+      <section id="symmetry" class="section">
+        <h2>Symmetry & Stability</h2>
+        <p>Symmetry is essential in chair design. Most chairs are bilaterally symmetrical, meaning the left and right sides mirror each other...</p>
+        <p><strong>Insight:</strong> Rocking chairs deliberately break symmetry by introducing curved legs, yet mathematics ensures stability...</p>
+      </section>
+
+      <section id="proportion" class="section">
+        <h2>Human Proportion & Aesthetics</h2>
+        <p>Designers often rely on human body measurements and even the golden ratio (1.618) to create chairs that are both functional and visually pleasing...</p>
+        <p><strong>Insight:</strong> Anthropometry guides chair design. Dining chairs are typically 43–48 cm high because this matches average knee height...</p>
+      </section>
+
+      <section id="physics" class="section">
+        <h2>Physics & Load Distribution</h2>
+        <p>Beyond geometry and proportion, physics ensures that chairs can safely support weight. Engineers calculate the load each leg must bear...</p>
+        <p><strong>Insight:</strong> Cantilever chairs (with no back legs) are marvels of physics: they use torque and elasticity to remain stable...</p>
+      </section>
+
+      <section id="evolution" class="section">
+        <h2>Evolution of Chair Mathematics</h2>
+        <p>Ancient stools were simple geometric blocks. Renaissance chairs began incorporating symmetry and proportion inspired by classical architecture. Modern ergonomic chairs integrate advanced geometry, biomechanics, and physics...</p>
+      </section>
+
+      <section id="conclusion" class="section">
+        <h2>Conclusion</h2>
+        <p>A chair is far more than a piece of furniture—it is a living example of mathematics at work. Geometry shapes its structure, symmetry ensures stability, proportion makes it comfortable, and physics keeps it safe...</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Mathematics in Everyday Design</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      // Hide all sections
+      document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+      // Show selected section
+      document.getElementById(id).style.display = 'block';
+    }
+
+    // Show introduction by default
+    showSection('introduction');
+  </script>
+</body>
+</html>
